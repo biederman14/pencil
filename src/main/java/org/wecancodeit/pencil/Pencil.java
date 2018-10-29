@@ -2,12 +2,15 @@ package org.wecancodeit.pencil;
 
 public class Pencil {
 
-	public void write(String writing) {
+	String writingAdd = "";
 
+	public void write(String writing) {
+		writingAdd += writing;
 	}
 
 	public String written() {
-		return "Hello, World.";
+		return writingAdd;
 
 	}
+
 }
