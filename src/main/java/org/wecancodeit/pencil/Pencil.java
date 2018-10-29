@@ -10,7 +10,6 @@ public class Pencil {
 
 	public String written() {
 		return writingAdd;
-
 	}
 
 }
