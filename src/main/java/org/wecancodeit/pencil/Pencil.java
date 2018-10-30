@@ -16,13 +16,19 @@ public class Pencil {
 			String subWriting = writing.substring(0, pointDurability);
 			writingAdd += subWriting;
 			// this creates the blank spaces and adds it to the end of writingAdd
-			int blankSpaces = writing.length() - pointDurability;
-			for (int padding = 0; padding < blankSpaces; padding++) {
-				writingAdd += " ";
-			}
+			writingAdd += addPadding(writing);
 		} else {
 			writingAdd += writing;
 		}
+	}
+
+	private String addPadding(String writing) {
+		String paddingString = "";
+		int blankSpaces = writing.length() - pointDurability;
+		for (int padding = 0; padding < blankSpaces; padding++) {
+			paddingString += " ";
+		}
+		return paddingString;
 	}
 
 	public String written() {
