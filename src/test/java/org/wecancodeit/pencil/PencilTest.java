@@ -34,4 +34,11 @@ public class PencilTest {
 		subject.write("seedpuppies?");
 		assertEquals("seedpuppie  ", subject.written());
 	}
+
+//	@Test
+//	public void spacesNotCountedWhenWriting() {
+//		subject = new Pencil(10);
+//		subject.write("see the puppies?");
+//		assertEquals("see the pupp", subject.written());
+//	}
 }
